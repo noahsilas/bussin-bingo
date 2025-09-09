@@ -1,0 +1,302 @@
+[
+  {
+    "name": "The Laundromat",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7754224,
+          "lng": -122.4988396
+        },
+        "place_id": "ChIJ2UBa7KWHhYARFaBUnGIvIN8",
+        "formatted_address": "3725 Balboa St, San Francisco, CA 94121, USA"
+      }
+    ]
+  },
+  {
+    "name": "Jim's",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7582669,
+          "lng": -122.4193578
+        },
+        "place_id": "ChIJITyzGzx-j4ARwSgLKyT1qa0",
+        "formatted_address": "2420 Mission St, San Francisco, CA 94110, USA"
+      }
+    ]
+  },
+  {
+    "name": "M Stop Market & Deli",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7163827,
+          "lng": -122.4504942
+        },
+        "place_id": "ChIJqZ2b7ih8j4AR7L06AxE8f14",
+        "formatted_address": "2598 San Jose Avenue, San Francisco, CA 94112, USA"
+      }
+    ]
+  },
+  {
+    "name": "Sunset Cantina",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.76092149999999,
+          "lng": -122.4987979
+        },
+        "place_id": "ChIJ3aSe65uHhYARAM0J3fTH7e8",
+        "formatted_address": "3414 Judah St, San Francisco, CA 94122, USA"
+      }
+    ]
+  },
+  {
+    "name": "Motoring Coffee",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7982035,
+          "lng": -122.4245964
+        },
+        "place_id": "ChIJoSiPpMKAhYAR3G1bhtH1YRQ",
+        "formatted_address": "1525 Union St, San Francisco, CA 94123, USA"
+      }
+    ]
+  },
+  {
+    "name": "New Love Tea",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7976694,
+          "lng": -122.4071211
+        },
+        "place_id": "ChIJu9Yvh_OAhYAR8ItWLMnMPfk",
+        "formatted_address": "601 Broadway, San Francisco, CA 94133, USA"
+      }
+    ]
+  },
+  {
+    "name": "Whack Donuts",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7952419,
+          "lng": -122.3962196
+        },
+        "place_id": "ChIJL0vHMWGAhYARX_2f-FT-99s",
+        "formatted_address": "4 Embarcadero Ctr Suite 4507, San Francisco, CA 94111, USA"
+      }
+    ]
+  },
+  {
+    "name": "Smitten Ice Cream",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7584027,
+          "lng": -122.421653
+        },
+        "place_id": "ChIJ9YFutj1-j4ARQbVqbSJcQvg",
+        "formatted_address": "904 Valencia St, San Francisco, CA 94110, USA"
+      }
+    ]
+  },
+  {
+    "name": "Devil's Teeth Baking Company",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7531976,
+          "lng": -122.505029
+        },
+        "place_id": "ChIJk_ZfoY-HhYARLVR4mCh2sv8",
+        "formatted_address": "3876 Noriega St, San Francisco, CA 94122, USA"
+      },
+      {
+        "location": {
+          "lat": 37.7755224,
+          "lng": -122.4977012
+        },
+        "place_id": "ChIJrUQw4KWHhYARmT4ud5IH4UE",
+        "formatted_address": "3619 Balboa St, San Francisco, CA 94121, USA"
+      },
+      {
+        "location": {
+          "lat": 37.7946507,
+          "lng": -122.3998262
+        },
+        "place_id": "ChIJNfYgs2GAhYAR1OP9x3YUHqs",
+        "formatted_address": "One Embarcadero Center, San Francisco, CA 94111, USA"
+      }
+    ]
+  },
+  {
+    "name": "Breadbelly",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7826949,
+          "lng": -122.4744036
+        },
+        "place_id": "ChIJQ7uLSBeHhYARoU1teFGG_o8",
+        "formatted_address": "1408 Clement St, San Francisco, CA 94118, USA"
+      },
+      {
+        "location": {
+          "lat": 37.7586689,
+          "lng": -122.3839131
+        },
+        "place_id": "ChIJ80R1QsR_j4AR-chjeDT9fX4",
+        "formatted_address": "1070 Maryland St, San Francisco, CA 94107, USA"
+      }
+    ]
+  },
+  {
+    "name": "The French Spot",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7878357,
+          "lng": -122.418189
+        },
+        "place_id": "ChIJD8q79ZOAhYARSuXynI8B0QI",
+        "formatted_address": "1042 Larkin St, San Francisco, CA 94109, USA"
+      }
+    ]
+  },
+  {
+    "name": "Fillmore Bakeshop",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.78694550000001,
+          "lng": -122.43321
+        },
+        "place_id": "ChIJ64fxh8eAhYARhrqawxGYBMA",
+        "formatted_address": "1890 Fillmore St, San Francisco, CA 94115, USA"
+      }
+    ]
+  },
+  {
+    "name": "Outta Sight Pizza",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7818216,
+          "lng": -122.4171258
+        },
+        "place_id": "ChIJ8YQSDZqAhYARSRh6tiE735w",
+        "formatted_address": "422 Larkin St, San Francisco, CA 94102, USA"
+      },
+      {
+        "location": {
+          "lat": 37.79442969999999,
+          "lng": -122.4038752
+        },
+        "place_id": "ChIJgaJw5IqAhYARUAUWiDXHKFc",
+        "formatted_address": "643 Clay St, San Francisco, CA 94111, USA"
+      }
+    ]
+  },
+  {
+    "name": "Standard Deviant Brewing",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.768487,
+          "lng": -122.4194284
+        },
+        "place_id": "ChIJ08eqQCF-j4AROVRYhbkqXUw",
+        "formatted_address": "280 14th St, San Francisco, CA 94103, USA"
+      },
+      {
+        "location": {
+          "lat": 37.7586689,
+          "lng": -122.3839131
+        },
+        "place_id": "ChIJ80R1QsR_j4AR-chjeDT9fX4",
+        "formatted_address": "1070 Maryland St, San Francisco, CA 94107, USA"
+      }
+    ]
+  },
+  {
+    "name": "Peacekeeper",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7895019,
+          "lng": -122.4125319
+        },
+        "place_id": "ChIJoVBS9I2AhYARzOVe97ECE0k",
+        "formatted_address": "925 Bush St, San Francisco, CA 94109, USA"
+      }
+    ]
+  },
+  {
+    "name": "Zeitgeist",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.77002780000001,
+          "lng": -122.4221052
+        },
+        "place_id": "ChIJ-ciOQiB-j4ARGphlLnGpDJQ",
+        "formatted_address": "199 Valencia St, San Francisco, CA 94103, USA"
+      }
+    ]
+  },
+  {
+    "name": "Robberbaron",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7955267,
+          "lng": -122.4215189
+        },
+        "place_id": "ChIJtaVEgemAhYARjkGsz44YUiE",
+        "formatted_address": "2032 Polk St, San Francisco, CA 94109, USA"
+      }
+    ]
+  },
+  {
+    "name": "Propagation",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7871518,
+          "lng": -122.4163661
+        },
+        "place_id": "ChIJQeciY5GAhYARw2brwyKtQrw",
+        "formatted_address": "895 Post St, San Francisco, CA 94109, USA"
+      }
+    ]
+  },
+  {
+    "name": "Rikki's",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7651206,
+          "lng": -122.4313774
+        },
+        "place_id": "ChIJp1dJRBx-j4ARAB5wiGosa64",
+        "formatted_address": "2223 Market St, San Francisco, CA 94114, USA"
+      }
+    ]
+  },
+  {
+    "name": "Oasis Fusion Kitchen",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.7209469,
+          "lng": -122.4378547
+        },
+        "place_id": "ChIJ8cQnAYV-j4ARfAg0AGtJ6qw",
+        "formatted_address": "4826 Mission St, San Francisco, CA 94112, USA"
+      }
+    ]
+  }
+]
