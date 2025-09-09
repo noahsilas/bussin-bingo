@@ -13,6 +13,10 @@ main {
   flex-grow: 1;
 }
 
+.visitedMarker {
+  filter: grayscale(0.8);
+}
+
 .highlightMarker {
   filter: hue-rotate(240deg);
 }
