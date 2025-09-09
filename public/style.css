@@ -4,13 +4,26 @@ body {
   min-height: 100%;
   position: relative;
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
 }
 
 h2 { margin: 0; }
+p { margin: 0 0 1rem; }
 
-main {
-  flex-grow: 1;
+main { flex-grow: 1; }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 0;
+  color: oklch(93.2% 0.032 255.585);
+  background-color: oklch(28.2% 0.091 267.935);
+  font-size: 0.8rem;
+}
+
+
+footer a {
+  color: oklch(93.2% 0.032 255.585);
+  text-decoration: underline;
 }
 
 .visitedMarker {
