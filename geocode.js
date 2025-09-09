@@ -12,6 +12,7 @@ const places = [
   { "name": "Whack Donuts", "addresses": ["4 Embarcadero Center Suite #4507"] },
   { "name": "Smitten Ice Cream", "addresses": ["904 Valencia Street"] },
   { "name": "Devil's Teeth Baking Company", "addresses": ["3876 Noriega Street", "3619 Balboa Street", "1 Embarcadero Center"] },
+  { "name": "Thorough Bread & Pastry", "addresses": ["248 Church Street"] },
   { "name": "Breadbelly", "addresses": ["1408 Clement Street", "1070 Maryland Street (Pier 70 Building 12)"] },
   { "name": "The French Spot", "addresses": ["1042 Larkin Street"] },
   { "name": "Fillmore Bakeshop", "addresses": ["1890 Fillmore Street"] },

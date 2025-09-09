@@ -133,6 +133,19 @@
     ]
   },
   {
+    "name": "Thorough Bread & Pastry",
+    "addresses": [
+      {
+        "location": {
+          "lat": 37.766564,
+          "lng": -122.4291851
+        },
+        "place_id": "ChIJx6hUhh5-j4ARzc7tyq57zsU",
+        "formatted_address": "248 Church St, San Francisco, CA 94114, USA"
+      }
+    ]
+  },
+  {
     "name": "Breadbelly",
     "addresses": [
       {
