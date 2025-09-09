@@ -54,7 +54,7 @@ async function main() {
     ))
     return { name: place.name, addresses };
   }))
-  fs.writeFileSync('geocoded.json', JSON.stringify(data, null, 2))
+  fs.writeFileSync('public/geocoded.json', JSON.stringify(data, null, 2))
 }
 
 main();
