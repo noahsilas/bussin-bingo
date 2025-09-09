@@ -2,6 +2,7 @@ import places from './geocoded.json' with { type: "json" };
 
 let map;
 let openWindow = null;
+const markers = {};
 
 function h2(text) {
   const el = document.createElement('h2');
@@ -23,15 +24,27 @@ async function initMap() {
   const { AdvancedMarkerElement } = await markerP;
 
   for (const place of places) {
+    markers[place.name] = [];
     for (const address of place.addresses) {
       const marker = new AdvancedMarkerElement({
         map,
         position: { lat: address.location.lat, lng: address.location.lng },
         title: place.name,
       });
+      markers[place.name].push(marker);
       const infoWindow = new google.maps.InfoWindow({
         headerContent: h2(place.name),
         content: `<p>${address.formatted_address}</p>`,
+      });
+      marker.content.addEventListener('mouseenter', () => {
+        markers[place.name].forEach((marker) => {
+          marker.element.classList.add('highlightMarker')
+        })
+      });
+      marker.content.addEventListener('mouseleave', () => {
+        markers[place.name].forEach((marker) => {
+          marker.element.classList.remove('highlightMarker')
+        })
       });
       marker.addListener("click", () => {
         openWindow && openWindow.close();
