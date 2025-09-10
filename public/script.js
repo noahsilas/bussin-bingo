@@ -17,7 +17,7 @@ const visit = (name, status = true) => {
   localStorage.setItem('visited', JSON.stringify(visited));
 }
 
-function tag(tag, children) {
+function tag(tag, children, attrs) {
   const el = document.createElement(tag);
   if (typeof children == 'string') {
     el.textContent = children;
@@ -26,13 +26,17 @@ function tag(tag, children) {
       el.appendChild(child);
     }
   }
+  if (attrs) {
+    Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+  }
   return el;
 }
 
-const h2 = (children) => tag('h2', children);
-const div = (children) => tag('div', children);
-const p = (children) => tag('p', children);
-const button = (children) => tag('button', children);
+const h2 = (children, attrs) => tag('h2', children, attrs);
+const div = (children, attrs) => tag('div', children, attrs);
+const p = (children, attrs) => tag('p', children, attrs);
+const button = (children, attrs) => tag('button', children, attrs);
+const a = (children, attrs) => tag('a', children, attrs);
 
 async function initMap() {
   const mapP = google.maps.importLibrary("maps");
@@ -64,7 +68,7 @@ async function initMap() {
         visit(place.name, !visited[place.name])
       })
       const infoWindow = new google.maps.InfoWindow({
-        headerContent: h2(place.name),
+        headerContent: a([h2(place.name)], { href: place.url }),
         content: div([p(address.formatted_address), b])
       });
       marker.content.addEventListener('mouseenter', () => {
