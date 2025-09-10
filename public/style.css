@@ -5,18 +5,24 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: oklch(37.9% 0.146 265.522)
 }
 
 h2 { margin: 0; }
-p { margin: 0 0 1rem; }
+p { margin: 0 0 0.75rem; }
 
-main { flex-grow: 1; }
+main {
+  flex-grow: 1;
+  border-radius: 0 0 0.75rem 0.75rem;
+  overflow: hidden;
+  box-shadow: 0px 7px 10px oklch(28.2% 0.091 267.935);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem 0;
+  padding: 0.75rem 2rem 0;
   color: oklch(93.2% 0.032 255.585);
-  background-color: oklch(28.2% 0.091 267.935);
   font-size: 0.8rem;
 }
 
