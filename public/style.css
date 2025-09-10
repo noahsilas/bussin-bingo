@@ -1,3 +1,12 @@
+:root {
+  /* Thanks Tailwind for the colors
+   * https://tailwindcss.com/docs/colors
+   */
+  --blue-200: oklch(93.2% 0.032 255.585);
+  --blue-900: oklch(37.9% 0.146 265.522);
+  --blue-950: oklch(28.2% 0.091 267.935);
+}
+
 html { height: 100%; }
 body {
   margin: 0;
@@ -5,7 +14,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: oklch(37.9% 0.146 265.522)
+  background-color: var(--blue-900);
 }
 
 h2 { margin: 0; }
@@ -15,20 +24,20 @@ main {
   flex-grow: 1;
   border-radius: 0 0 0.75rem 0.75rem;
   overflow: hidden;
-  box-shadow: 0px 7px 10px oklch(28.2% 0.091 267.935);
+  box-shadow: 0px 7px 10px var(--blue-950);
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 2rem 0;
-  color: oklch(93.2% 0.032 255.585);
+  color: var(--blue-200);
   font-size: 0.8rem;
 }
 
 
 footer a {
-  color: oklch(93.2% 0.032 255.585);
+  color: var(--blue-200);
   text-decoration: underline;
 }
 
