@@ -17,7 +17,7 @@ const visit = (name, status = true) => {
   localStorage.setItem('visited', JSON.stringify(visited));
 }
 
-function tag(tag, children, attrs) {
+function tag(tag, children, attrs = {}, listeners = {}) {
   const el = document.createElement(tag);
   if (typeof children == 'string') {
     el.textContent = children;
@@ -26,19 +26,21 @@ function tag(tag, children, attrs) {
       el.appendChild(child);
     }
   }
-  if (attrs) {
-    Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
-  }
+  Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+  Object.entries(listeners).forEach(([k,v]) => el.addEventListener(k, v));
   return el;
 }
 
-const h2 = (children, attrs) => tag('h2', children, attrs);
-const div = (children, attrs) => tag('div', children, attrs);
-const p = (children, attrs) => tag('p', children, attrs);
-const button = (children, attrs) => tag('button', children, attrs);
-const a = (children, attrs) => tag('a', children, attrs);
+const h2 = (...args) => tag('h2', ...args);
+const div = (...args) => tag('div', ...args);
+const p = (...args) => tag('p', ...args);
+const button = (...args) => tag('button', ...args);
+const a = (...args) => tag('a', ...args);
+
+const nav = document.getElementById('nav');
 
 async function initMap() {
+  const navLinks = document.getElementById('navLinks');
   const mapP = google.maps.importLibrary("maps");
   const markerP = google.maps.importLibrary("marker");
   const { Map } = await mapP;
@@ -47,12 +49,19 @@ async function initMap() {
     center: { lat: 37.7620, lng: -122.4450 },
     zoom: 13,
     mapId: 'b8c4fa3c1823c00153f5f936',
+    disableDefaultUI: true,
   });
 
   const { AdvancedMarkerElement } = await markerP;
 
   for (const place of places) {
     markers[place.name] = [];
+    navLinks.appendChild(
+      a(place.name, {}, { click: () => {
+        markers[place.name][0].click();
+        nav.classList.remove('open');
+      }})
+    );
     for (const address of place.addresses) {
       const marker = new AdvancedMarkerElement({
         map,
@@ -90,4 +99,11 @@ async function initMap() {
   }
 }
 
+function initNav() {
+  document.getElementById('navToggle').addEventListener('click', () => {
+    nav.classList.toggle('open')
+  });
+}
+
 initMap();
+initNav();
