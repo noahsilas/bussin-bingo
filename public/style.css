@@ -7,6 +7,10 @@
   --blue-950: oklch(28.2% 0.091 267.935);
   --gray-100: oklch(96.7% 0.003 264.542);
   --gray-700: oklch(37.3% 0.034 259.733);
+  --gray-900: oklch(21% 0.034 264.665);
+
+  --nav-width: 20rem;
+  --nav-shadow-width: 10px;
 }
 
 html { height: 100%; }
@@ -38,7 +42,7 @@ nav {
   display: flex;
 
   transition: transform .2s ease-in-out;
-  transform: translateX(-20rem);
+  transform: translateX(calc(-1 *  var(--nav-width) + -1 * var(--nav-shadow-width)));
 }
 
 nav.open {
@@ -47,12 +51,13 @@ nav.open {
 
 #navContent {
   box-sizing: border-box;
-  width: 20rem;
+  width: var(--nav-width);
   height: 90svh;
   margin-top: 1rem;
   color: var(--gray-100);
   background-color: var(--gray-700);
   border-radius: 0 0.75rem 0.75rem 0;
+  box-shadow: 4px 7px 10px var(--gray-900);
 
   display: flex;
   flex-direction: column;
@@ -68,8 +73,14 @@ nav.open {
 
 
 #navToggle {
+  margin-left: 10px;
   padding: 1rem;
   font-size: xx-large;
+  transition: transform .2s ease-in-out;
+}
+
+nav.open #navToggle {
+  transform: translateX(calc(-1 * var(--nav-shadow-width)));
 }
 
 nav a {
